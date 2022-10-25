@@ -1,1 +1,1 @@
-VInod Hey!THis is first git repo creating.
+Hey!THis is first git repo creating.
