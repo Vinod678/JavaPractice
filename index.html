@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Project</title>
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+ 			<div id="branding">
+ 				<h1><span class="highlight">IPL</span><sub>Indian Premier League</sub></h1> 
+ 			</div>
+ 			<nav>
+ 				<ul>
+ 					<li class="one"><a id="font" href="">Home</a></li>
+ 					<li><a id="font" href="">About</a></li>
+ 					<li><a id="font" href="">Sign In</a></li>
+ 				</ul>
+	 			<div id="search">
+	 				<form>
+	 					 <input type="search" value="" placeholder="search" id="font">
+	 				</form>
+	 			</div>
+	 		</div>
+ 			</nav>
+		</div>
+	</header>
+	<nav>
+		<div class="container1">
+				<ul>
+					<li><a href="#live">Live scores</a></li>
+					<li><a href="">Schedule</a></li>
+					<li><a href="">Teams <span><img src="images/4.jpg" height="10px"></span></a>
+						<ul>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Teams</a></li>
+						</ul>
+					</li>		
+					<li><a>Videos <span><img src="images/4.jpg" height="10px"></span></a>
+						<ul>
+							<li><a id="ven" href="">Highlights</a></li>
+							<li><a id="ven" href="">Best Catches</a></li>
+							<li><a id="ven" href="">Best Sixes</a></li>
+							<li><a id="ven" href="">Funny Incidents</a></li>
+						</ul>	
+					</li>	
+					<li><a href="">Photos</a></li>
+					<li><a >Rankings <span><img src="images/4.jpg" height="10px"></span></a>
+						<ul>
+							<li><a id="ven" href="">Teams</a></li>
+							<li><a id="ven" href="">Batting</a></li>
+							<li><a id="ven" href="">Bowling</a></li>
+						</ul>	
+					</li>	
+					<li><a >More <span><img src="images/4.jpg" height="10px"></span></a>
+						<ul>
+							<li><a id="ven" href="">Contact Us</a></li>
+						</ul>
+					</li>	
+				</ul>			
+		</div>
+	</nav>
+	<div class="w3" >
+		  <img class="mySlides" src="images/slides/1.jpg" width="1000px" height="500px">
+		  <img class="mySlides" src="images/slides/2.jpg" width="1000px" height="500px">
+		  <img class="mySlides" src="images/slides/3.jpg" width="1000px" height="500px">
+		  <img class="mySlides" src="images/slides/4.jpg" width="1000px" height="500px">
+		  <img class="mySlides" src="images/slides/5.jpg" width="1000px" height="500px">
+		  <img class="mySlides" src="images/slides/6.jpg" width="1000px" height="500px">
+		  <img class="mySlides" src="images/slides/7.jpg" width="1000px" height="500px">
+	</div><br><br>
+
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 3500); // Change image every 2 seconds
+		}
+		</script>
+		
+</body>	
+</html>
