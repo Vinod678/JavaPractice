@@ -1,2 +1,0 @@
-3rd repo
-Hey!THis is first git repo creating.
