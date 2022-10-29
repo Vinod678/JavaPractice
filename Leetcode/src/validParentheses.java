@@ -1,8 +1,8 @@
 import java.util.Stack;
 
-public class validParentheses{
+class validParentheses{
 
-public boolean isValid(String s) {
+public static boolean isValid(String s) {
 	
 	/*Stack */
 	Stack<Character> st = new Stack<Character>();
@@ -10,7 +10,7 @@ public boolean isValid(String s) {
 	
 	for (char each : s.toCharArray()) {
 		if(each=='(' || each=='[' || each=='{') {
-			each.push(st);
+			st.push(each);
 			
 		}
 		else {
@@ -20,25 +20,26 @@ public boolean isValid(String s) {
 			
 			char ch = st.pop();
 			
-			if( (ch=='(' && each==')') || (ch=='[' && each==']' || (ch=='{' && each=='}' ) 
+			if( (ch=='(' && each==')') || (ch=='[' && each==']') || (ch=='{' && each=='}')) 
 					continue;
 			
 			else return false;
 		}
-	} return st.isEmpty();
+	}
+	return st.isEmpty();
 	
 }
 	
 public static void main(String[] args) {
 	
-	String s = "()[]{}"
+	String s = "()[]{}";
 			
-	if(isValid(s)==true) {
+	if(isValid(s)==true)  
 		System.out.println("true");
-	}
-	else(isValid(s) == false) {
+	
+	else
 		System.out.println("false");
-	}
+	
 			
 }
 
